@@ -236,6 +236,9 @@ footer {
 
 // Module: encapsulates modules, re-usable
 
+.header__Photo {
+  width: 100%;
+}
 .about {
    display: grid;
    position: relative;
@@ -439,6 +442,9 @@ footer {
    background-size: contain;
 }
 
+.cv {
+  padding-bottom: 4em;
+}
 .cv a:hover {
    color: $clr-contrast;
 }
@@ -544,6 +550,15 @@ hr {
    height: auto;
 }
 
+.project__desc {
+  margin-bottom: 2em;
+}
+
 .phone-num {
    margin-left: 4px;
+}
+
+.nav--active {
+  border-bottom: 2px solid $clr-accent;
+  color: $clr-accent;
 }

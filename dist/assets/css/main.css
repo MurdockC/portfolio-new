@@ -290,6 +290,9 @@ footer {
 .mb--s {
   margin-bottom: .4em; }
 
+.header__Photo {
+  width: 100%; }
+
 .about {
   display: grid;
   position: relative;
@@ -448,6 +451,9 @@ footer {
   background: #fff url(http://localhost/portfolio-new/images/logo.png) no-repeat center center;
   background-size: contain; }
 
+.cv {
+  padding-bottom: 4em; }
+
 .cv a:hover {
   color: #00b3ff; }
 
@@ -528,5 +534,12 @@ hr {
   width: 100%;
   height: auto; }
 
+.project__desc {
+  margin-bottom: 2em; }
+
 .phone-num {
   margin-left: 4px; }
+
+.nav--active {
+  border-bottom: 2px solid #69ce9d;
+  color: #69ce9d; }
