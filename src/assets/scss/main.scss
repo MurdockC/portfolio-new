@@ -95,6 +95,9 @@ h3 {
 h4 {
    font-size: 1.25em;
 }
+h5,h6, small {
+  font-family: 'Montserrat', sans-serif;
+}
 
 .small {
    font-size: .9.2em;
@@ -211,6 +214,12 @@ footer {
 
 .container--xl {
    max-width: 75em;
+   margin: 0 auto;
+   padding: 0 1em;
+}
+
+.container--l {
+   max-width: 55em;
    margin: 0 auto;
    padding: 0 1em;
 }
@@ -515,15 +524,15 @@ hr {
 }
 
 .cv__references--contact {
-   text-align: center;
-   display: inline-block;
-   border: 2px solid $clr-accent;
-   margin-bottom: 3em;
-   padding: 1em;
-   border-radius: .5em;
-   text-align: center;
-   small {
-      display: block;
+   display: block;
+   margin-right: 1em;
+   margin-bottom: 1em;
+   h4{
+     margin-bottom: .1em;
+     margin-top: .1em;
+   }
+   p {
+     margin-bottom: .1em;
    }
 }
 
