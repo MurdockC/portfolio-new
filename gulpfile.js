@@ -49,13 +49,13 @@ gulp.task('sass', function() {
 // });
 
 gulp.task('connect', function() {
-    connect.server({ base: '../portfolio-new/', port: 8081, keepalive: true});
+    connect.server({ base: '../portfolio-new/', port: 8080, keepalive: true});
 });
 
 gulp.task('browserSync',['connect'], function() {
     browserSync({
         proxy: 'localhost/portfolio-new/',
-        port: 8081,
+        port: 8080,
         open: true,
         notify: false
     });

@@ -196,6 +196,7 @@ strong {
 
 body {
   max-width: 100%;
+  overflow: hidden;
   line-height: 1.45;
   color: #0d110f;
   text-align: center;
@@ -214,15 +215,25 @@ header {
       grid-template-columns: 1fr; } }
 
 .border-logo {
+  position: fixed;
+  top: .5em;
+  left: 0;
   height: 45px;
-  max-width: 50px;
-  padding: 5px;
+  padding: 5px 20px;
   background: #69ce9d;
-  border-radius: 0px 0px .75em .75em; }
+  border-radius: 0px .75em .75em 0px; }
   .border-logo img {
     height: 2em;
     width: 2em;
-    opacity: 0.1; }
+    opacity: 0.1;
+    margin-top: .1em; }
+  @media only screen and (min-width: 768px) {
+    .border-logo {
+      position: relative;
+      height: 45px;
+      max-width: 50px;
+      background: #69ce9d;
+      border-radius: 0px 0px .75em .75em; } }
 
 .border-logo:hover img {
   opacity: 0.3; }
@@ -253,15 +264,22 @@ footer {
       flex-direction: row; } }
 
 .nav {
-  display: flex;
-  margin: auto;
-  width: 100%;
-  max-width: 75em; }
+  display: block;
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .nav {
+      display: flex;
+      margin: auto;
+      width: 100%;
+      max-width: 75em; } }
 
 .nav__Item {
-  flex: 1 0 200px;
-  padding-top: .5em;
-  font-family: 'Montserrat', sans-serif; }
+  display: block; }
+  @media only screen and (min-width: 768px) {
+    .nav__Item {
+      flex: 1 0 200px;
+      padding-top: .5em;
+      font-family: 'Montserrat', sans-serif; } }
 
 .nav__Item:hover {
   color: #69ce9d; }
@@ -355,26 +373,21 @@ footer {
       opacity: 1; }
 
 .projects__Container {
-  display: grid;
+  display: block;
   min-height: 300px;
   grid-template-columns: 1fr;
-  grid-template-rows: 30px minmax(500px, 1fr) 30px 30px minmax(500px, 1fr) 30px;
   margin-bottom: 12em;
   grid-column-gap: 3em;
   grid-row-gap: 3em; }
+  @media only screen and (min-width: 768px) {
+    .projects__Container {
+      display: grid;
+      grid-template-rows: 30px minmax(500px, 1fr) 30px 30px minmax(500px, 1fr) 30px; } }
 
 @media only screen and (min-width: 576px) {
   .case__Title {
     grid-column: 1/ span 4;
     grid-row: 1/ span 1;
-    background-color: #69ce9d;
-    color: white;
-    text-align: center; } }
-
-@media only screen and (min-width: 576px) {
-  .projects__Title {
-    grid-column: 1/ span 4;
-    grid-row: 3/ span 1;
     background-color: #69ce9d;
     color: white;
     text-align: center; } }
@@ -444,6 +457,7 @@ footer {
 
 .project_Title {
   text-align: left;
+  margin-bottom: 2em;
   margin-top: 1em;
   font-family: 'Montserrat', sans-serif; }
 
@@ -543,3 +557,21 @@ hr {
 .nav--active {
   border-bottom: 2px solid #69ce9d;
   color: #69ce9d; }
+
+button {
+  border: none;
+  background: none; }
+
+.dropdown__Button {
+  position: fixed;
+  margin-top: 1.5em;
+  top: 0;
+  right: .5em;
+  transition: transform .1s ease-in-out;
+  z-index: 2; }
+
+.dropdown__Button--line {
+  height: 2px;
+  width: 30px;
+  background-color: #395060;
+  margin: 6px 10px; }

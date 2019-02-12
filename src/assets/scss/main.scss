@@ -115,6 +115,7 @@ strong {
 
 body {
    max-width: 100%;
+   overflow: hidden;
    line-height: 1.45;
    color: $copy-dark;
    text-align: center;
@@ -141,16 +142,26 @@ header {
 }
 
 .border-logo  {
+   position: fixed;
+   top: .5em;
+   left: 0;
    height: 45px;
-   max-width: 50px;
    // margin: 0 auto;
-   padding: 5px;
+   padding: 5px 20px;
    background: $clr-accent;
-   border-radius: 0px 0px .75em .75em;
+   border-radius: 0px .75em .75em 0px;
    img {
       height: 2em;
       width: 2em;
       opacity: 0.1;
+      margin-top: .1em;
+   }
+   @include small {
+      position: relative;
+      height: 45px;
+      max-width: 50px;
+      background: $clr-accent;
+      border-radius: 0px 0px .75em .75em;
    }
 }
 
@@ -188,16 +199,23 @@ footer {
 // Layout: big page sections - .header, .sidebar, etc. + supporting classes
 
 .nav {
-   display: flex;
-   margin:auto;
+   display: block;
    width: 100%;
-   max-width: 75em;
+   @include small {
+      display: flex;
+      margin:auto;
+      width: 100%;
+      max-width: 75em;
+   }
 }
 
 .nav__Item {
-   flex: 1 0 200px;
-   padding-top: .5em;
-   font-family: 'Montserrat', sans-serif;
+   display: block;
+   @include small {
+      flex: 1 0 200px;
+      padding-top: .5em;
+      font-family: 'Montserrat', sans-serif;
+   }
 }
 
 .nav__Item:hover {
@@ -321,16 +339,21 @@ footer {
 }
 
 .projects__Container {
-   display: grid;
+   display: block;
    min-height: 300px;
    grid-template-columns:  1fr;
-   grid-template-rows: 30px minmax(500px, 1fr) 30px 30px minmax(500px, 1fr) 30px;
+
    margin-bottom: 12em;
    grid-column-gap: 3em;
    grid-row-gap: 3em;
+   @include small {
+      display: grid;
+      grid-template-rows: 30px minmax(500px, 1fr) 30px 30px minmax(500px, 1fr) 30px;
+   }
 }
 
 .case__Title {
+
    @include x-small {
       grid-column: 1/ span 4;
       grid-row: 1/ span 1;
@@ -340,15 +363,16 @@ footer {
    }
 }
 
-.projects__Title {
-   @include x-small {
-      grid-column: 1/ span 4;
-      grid-row: 3/ span 1;
-      background-color: $clr-accent;
-      color: white;
-      text-align: center;
-   }
-}
+// .project__Title {
+//    margin-bottom: 2em;
+//    // @include x-small {
+//    //    grid-column: 1/ span 4;
+//    //    grid-row: 3/ span 1;
+//    //    background-color: $clr-accent;
+//    //    color: white;
+//    //    text-align: center;
+//    // }
+// }
 
 .projects__Container {
    @include x-small {
@@ -433,6 +457,7 @@ footer {
 
 .project_Title {
    text-align: left;
+   margin-bottom: 2em;
    margin-top: 1em;
    font-family: 'Montserrat', sans-serif;
 }
@@ -561,4 +586,24 @@ hr {
 .nav--active {
   border-bottom: 2px solid $clr-accent;
   color: $clr-accent;
+}
+
+button {
+   border: none;
+   background: none;
+}
+.dropdown__Button {
+   position: fixed;
+    margin-top: 1.5em;
+    top:0;
+    right: .5em;
+    transition: transform .1s ease-in-out;
+    z-index: 2;
+}
+
+.dropdown__Button--line {
+    height: 2px;
+    width: 30px;
+    background-color: $clr-drk-gray;
+    margin: 6px 10px;
 }
