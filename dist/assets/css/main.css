@@ -221,7 +221,8 @@ header {
   height: 45px;
   padding: 5px 20px;
   background: #69ce9d;
-  border-radius: 0px .75em .75em 0px; }
+  border-radius: 0px .75em .75em 0px;
+  z-index: 3; }
   .border-logo img {
     height: 2em;
     width: 2em;
@@ -271,6 +272,7 @@ footer {
       display: flex;
       margin: auto;
       width: 100%;
+      max-width: 55em;
       max-width: 75em; } }
 
 .nav__Item {
@@ -433,7 +435,7 @@ footer {
 
 .project_Wrapper:before {
   content: "";
-  z-index: 100; }
+  z-index: 1; }
 
 .nc {
   background: #69ce9d url(../images/nc.png) no-repeat center center;
@@ -466,6 +468,7 @@ footer {
   background-size: contain; }
 
 .cv {
+  padding-top: 3em;
   padding-bottom: 4em; }
 
 .cv a:hover {
@@ -569,6 +572,9 @@ button {
   right: .5em;
   transition: transform .1s ease-in-out;
   z-index: 2; }
+  @media only screen and (min-width: 768px) {
+    .dropdown__Button {
+      display: none; } }
 
 .dropdown__Button--line {
   height: 2px;
