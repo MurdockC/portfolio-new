@@ -160,6 +160,8 @@ header {
    @include small {
       position: relative;
       height: 45px;
+      top: 0;
+      padding: 5px 5px;
       max-width: 50px;
       background: $clr-accent;
       border-radius: 0px 0px .75em .75em;
@@ -576,6 +578,7 @@ hr {
 .project__Photo--fw {
    width: 100%;
    height: auto;
+   margin-top: 2em;
 }
 
 .project__desc {
@@ -612,4 +615,11 @@ button {
     width: 30px;
     background-color: $clr-drk-gray;
     margin: 6px 10px;
+}
+
+.photo-desc {
+   text-align: center;
+   margin-bottom: 1em;
+   font-size: .8em;
+   color: $copy-light;
 }

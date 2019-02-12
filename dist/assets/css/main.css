@@ -232,6 +232,8 @@ header {
     .border-logo {
       position: relative;
       height: 45px;
+      top: 0;
+      padding: 5px 5px;
       max-width: 50px;
       background: #69ce9d;
       border-radius: 0px 0px .75em .75em; } }
@@ -549,7 +551,8 @@ hr {
 
 .project__Photo--fw {
   width: 100%;
-  height: auto; }
+  height: auto;
+  margin-top: 2em; }
 
 .project__desc {
   margin-bottom: 2em; }
@@ -581,3 +584,9 @@ button {
   width: 30px;
   background-color: #395060;
   margin: 6px 10px; }
+
+.photo-desc {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: .8em;
+  color: #55625c; }
