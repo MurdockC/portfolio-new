@@ -262,9 +262,6 @@ footer {
   footer small {
     display: block;
     width: 100%; }
-  @media only screen and (min-width: 992px) {
-    footer {
-      flex-direction: row; } }
 
 .nav {
   display: block;
@@ -586,7 +583,6 @@ button {
   margin: 6px 10px; }
 
 .photo-desc {
-  text-align: center;
   margin-bottom: 1em;
   font-size: .8em;
   color: #55625c; }

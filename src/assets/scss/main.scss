@@ -194,9 +194,6 @@ footer {
       display: block;
       width: 100%;
    }
-   @include med {
-      flex-direction: row;
-   }
 }
 
 // Layout: big page sections - .header, .sidebar, etc. + supporting classes
@@ -618,7 +615,6 @@ button {
 }
 
 .photo-desc {
-   text-align: center;
    margin-bottom: 1em;
    font-size: .8em;
    color: $copy-light;
