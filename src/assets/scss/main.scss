@@ -212,10 +212,11 @@ footer {
 
 .nav__Item {
    display: block;
+   padding: 1em;
+   font-family: 'Montserrat', sans-serif;
    @include small {
       flex: 1 0 200px;
       padding-top: .5em;
-      font-family: 'Montserrat', sans-serif;
    }
 }
 
@@ -618,4 +619,54 @@ button {
    margin-bottom: 1em;
    font-size: .8em;
    color: $copy-light;
+}
+
+.hideOnMobile {
+  display: none;
+  @include small {
+    display: flex;
+  }
+}
+
+.mobileNav--show {
+  display: block;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  top: 80px;
+  background-color: white;
+  height: auto;
+  button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+.dropdown__Button {
+  margin-top: 20px;
+  transition: transform .1s ease-in-out;
+  @include med {
+    display: none;
+  }
+}
+.dropdown__Button--active {
+  transform: rotate(90deg);
+}
+
+.dropdown__Button--active .dropdown__Button--line.first {
+  transform: rotate(45deg);
+  position: relative;
+  top: 7px;
+}
+
+.dropdown__Button--active .dropdown__Button--line.sec {
+  opacity: 0;
+}
+
+.dropdown__Button--active .dropdown__Button--line.last {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -8px;
 }

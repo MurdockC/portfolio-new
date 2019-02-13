@@ -17,18 +17,18 @@
       <title>Caleb Murdock</title>
    </head>
    <body>
-      <div class="nav container--l">
-         <button id="dropDownButton" class="dropdown__Button">
-        <div class="dropdown__Button--line first"></div>
-        <div class="dropdown__Button--line sec"></div>
-        <div class="dropdown__Button--line last"></div>
-         </button>
-         <a class="border-logo border-logo--cv" href="index.html"><img src="dist/assets/images/logo.png" alt="Caleb Murdock Logo"></a>
-        <a href="web-projects.html" class="nav__Item">Web Projects</a>
-        <a href="marks.html" class="nav__Item">Logos and Marks</a>
-        <a href="quickwhips.html" class="nav__Item">Quickwhips</a>
-        <a href="cv.html" class="nav__Item">CV</a>
-      </div>
+    <a class="border-logo border-logo--cv" href="index.html"><img src="dist/assets/images/logo.png" alt="Caleb Murdock Logo"></a>
+    <button id="dropDownButton" class="dropdown__Button">
+      <div class="dropdown__Button--line first"></div>
+      <div class="dropdown__Button--line sec"></div>
+      <div class="dropdown__Button--line last"></div>
+    </button>
+    <div id="mobileNav" class="nav container--l hideOnMobile">
+      <a href="web-projects.html" class="nav__Item">Web Projects</a>
+      <a href="marks.html" class="nav__Item">Logos and Marks</a>
+      <a href="quickwhips.html" class="nav__Item">Quickwhips</a>
+      <a href="cv.html" class="nav__Item" >CV</a>
+    </div>
       <main>
          <section class="container--xl">
             <header>
@@ -36,7 +36,7 @@
                   <h1 class="about__Name">Caleb Murdock</h1>
                   <!-- <p class="about__Text">“Have nothing in your house that you do not know to be useful, or believe to be beautiful.”</p> -->
                   <h2>Currently working as a Web Developer at <a class="employer-link" href="https://ramseymediaworks.com/">Ramsey Mediaworks</a></h2>
-                  <p class="about__Text">I have nearly 27 years experience as a human being, about 3 of those have been as a web developer.  BFA Graphic Design graduate with an addiction to learning and a deeply inate need to create beautiful things for beautiful people.</p>
+                  <p class="about__Text">I have nearly 27 years experience as a human being, about 3 of those have been as a web designer.  BFA Graphic Design graduate with an addiction to learning and a deeply inate need to create beautiful things for beautiful people.</p>
                   <div class="about__Nav">
                      <ul class="about__Nav--items">
                         <li class="nav__Item icon"><a href="https://dribbble.com/CalebMurdock"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
@@ -68,4 +68,14 @@
          </footer>
       </section>
    </body>
+   <script>
+  window.onload = function(){
+  var dropButton = document.getElementById("dropDownButton");
+  var dropNav = document.getElementById("mobileNav");
+  dropButton.addEventListener("click",  function(){
+    dropNav.classList.toggle("mobileNav--show");
+    dropButton.classList.toggle("dropdown__Button--active");
+   });
+}
+</script>
 </html>

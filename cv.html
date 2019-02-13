@@ -11,13 +11,18 @@
       <title>Caleb Murdock</title>
    </head>
    <body>
-      <div class="nav container--l">
-        <a class="border-logo border-logo--cv" href="index.html"><img src="dist/assets/images/logo.png" alt="Caleb Murdock Logo"></a>
-        <a href="web-projects.html" class="nav__Item">Web Projects</a>
-        <a href="marks.html" class="nav__Item">Logos and Marks</a>
-        <a href="quickwhips.html" class="nav__Item">Quickwhips</a>
-         <a href="cv.html" class="nav__Item nav--active">CV</a>
-      </div>
+     <a class="border-logo border-logo--cv" href="index.html"><img src="dist/assets/images/logo.png" alt="Caleb Murdock Logo"></a>
+     <button id="dropDownButton" class="dropdown__Button">
+       <div class="dropdown__Button--line first"></div>
+       <div class="dropdown__Button--line sec"></div>
+       <div class="dropdown__Button--line last"></div>
+     </button>
+     <div id="mobileNav" class="nav container--l hideOnMobile">
+       <a href="web-projects.html" class="nav__Item">Web Projects</a>
+       <a href="marks.html" class="nav__Item">Logos and Marks</a>
+       <a href="quickwhips.html" class="nav__Item">Quickwhips</a>
+       <a href="cv.html" class="nav__Item nav--active" >CV</a>
+     </div>
       <div class="cv">
          <section class="container--l">
                <div class="cv__header">
