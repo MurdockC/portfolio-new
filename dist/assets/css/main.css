@@ -216,11 +216,10 @@ header {
 
 .border-logo {
   position: fixed;
-  top: .5em;
+  top: 1em;
   left: 0;
-  height: 45px;
+  height: 4em;
   padding: 5px 20px;
-  background: #69ce9d;
   border-radius: 0px .75em .75em 0px;
   z-index: 3; }
   .border-logo img {
@@ -228,6 +227,9 @@ header {
     width: 2em;
     opacity: 0.1;
     margin-top: .1em; }
+    @media only screen and (min-width: 768px) {
+      .border-logo img {
+        margin-top: 1em; } }
   @media only screen and (min-width: 768px) {
     .border-logo {
       position: relative;
@@ -235,7 +237,6 @@ header {
       top: 0;
       padding: 5px 5px;
       max-width: 50px;
-      background: #69ce9d;
       border-radius: 0px 0px .75em .75em; } }
 
 .border-logo:hover img {

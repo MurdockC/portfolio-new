@@ -143,12 +143,12 @@ header {
 
 .border-logo  {
    position: fixed;
-   top: .5em;
+   top: 1em;
    left: 0;
-   height: 45px;
+   height: 4em;
    // margin: 0 auto;
    padding: 5px 20px;
-   background: $clr-accent;
+   // background: $clr-accent;
    border-radius: 0px .75em .75em 0px;
    z-index: 3;
    img {
@@ -156,6 +156,9 @@ header {
       width: 2em;
       opacity: 0.1;
       margin-top: .1em;
+      @include small {
+        margin-top: 1em;
+      }
    }
    @include small {
       position: relative;
@@ -163,7 +166,7 @@ header {
       top: 0;
       padding: 5px 5px;
       max-width: 50px;
-      background: $clr-accent;
+      // background: $clr-accent;
       border-radius: 0px 0px .75em .75em;
    }
 }
