@@ -300,7 +300,7 @@ footer {
 .about__Nav {
    margin-top: .5em;
    li {
-      display: inline;
+      display: inline-block;
       margin: .25em;
    }
 }
@@ -326,6 +326,7 @@ footer {
 }
 
 .icon {
+   padding: 0;
    height: 2em;
    width: 2em;
    fill: black;
@@ -422,7 +423,7 @@ footer {
    display: flex;
    justify-content: center;
    align-items: center;
-   min-height: 200px;
+   min-height: 300px;
    overflow: hidden;
    @include med {
       height: 100%;
@@ -436,7 +437,7 @@ footer {
 }
 
 .nc {
-   background:  $clr-accent  url(../images/nc.png) no-repeat center center;
+   background:  $clr-accent  url(../images/projects/nc.png) no-repeat center center;
    background-size: cover;
 }
 
@@ -451,7 +452,7 @@ footer {
 }
 
 .p{
-   background: $clr-light-gray url(../images/marks.png) no-repeat center center;
+   background: hsl(205,25,94) url(../images/marks.png) no-repeat center center;
    background-size: cover;
 }
 

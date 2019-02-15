@@ -344,7 +344,7 @@ footer {
 .about__Nav {
   margin-top: .5em; }
   .about__Nav li {
-    display: inline;
+    display: inline-block;
     margin: .25em; }
 
 .project {
@@ -362,6 +362,7 @@ footer {
   width: 100%; }
 
 .icon {
+  padding: 0;
   height: 2em;
   width: 2em;
   fill: black; }
@@ -427,7 +428,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 200px;
+  min-height: 300px;
   overflow: hidden; }
   @media only screen and (min-width: 992px) {
     .project__Wrapper {
@@ -439,7 +440,7 @@ footer {
   z-index: 1; }
 
 .nc {
-  background: #69ce9d url(../images/nc.png) no-repeat center center;
+  background: #69ce9d url(../images/projects/nc.png) no-repeat center center;
   background-size: cover; }
 
 .bl {
@@ -451,7 +452,7 @@ footer {
   background-size: contain; }
 
 .p {
-  background: #c2d0ca url(../images/marks.png) no-repeat center center;
+  background: #ecf0f4 url(../images/marks.png) no-repeat center center;
   background-size: cover; }
 
 .s {
