@@ -281,7 +281,7 @@ footer {
   font-family: 'Montserrat', sans-serif; }
   @media only screen and (min-width: 768px) {
     .nav__Item {
-      flex: 1 0 200px;
+      flex: 1 0 150px;
       padding-top: .5em; } }
 
 .nav__Item:hover {
@@ -440,7 +440,7 @@ footer {
   z-index: 1; }
 
 .nc {
-  background: #69ce9d url(../images/projects/nc.png) no-repeat center center;
+  background: #69ce9d url(../images/projects/nc-old.png) no-repeat center center;
   background-size: cover; }
 
 .bl {
@@ -599,11 +599,13 @@ button {
 .mobileNav--show {
   display: block;
   width: 100%;
-  position: absolute;
-  z-index: 999;
-  top: 80px;
+  max-width: 100% !important;
+  position: fixed;
+  z-index: 1;
+  padding-top: 80px;
   background-color: white;
-  height: auto; }
+  height: 100vh;
+  margin-top: -4px; }
   .mobileNav--show button {
     display: block;
     width: 100%;
@@ -632,3 +634,6 @@ button {
   transform: rotate(-45deg);
   position: relative;
   top: -8px; }
+
+.project__Property {
+  font-weight: 600; }
