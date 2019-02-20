@@ -513,8 +513,8 @@ footer {
   background-size: contain; }
 
 .p {
-  background: #ecf0f4 url(../images/marks.png) no-repeat center center;
-  background-size: cover; }
+  background: #ecf0f4 url(../images/marks/mark5.png) no-repeat center center;
+  background-size: 75%; }
 
 .s {
   background: #c2d0ca url(../images/projects/c.png) no-repeat 57% 50%;
@@ -528,6 +528,7 @@ footer {
   text-align: left;
   margin-bottom: 2em;
   margin-top: 1em;
+  margin-left: 1.1em;
   font-family: 'Montserrat', sans-serif; }
 
 .project__Photo--main {
